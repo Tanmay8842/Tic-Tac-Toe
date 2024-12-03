@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div class="difficulty">
+    <button onclick="setDifficulty('easy')">Easy</button>
+    <button onclick="setDifficulty('medium')">Medium</button>
+    <button onclick="setDifficulty('hard')">Hard</button>
+  </div>
+  <div class="board" id="board"></div>
+  <div class="result" id="result"></div>
+  <button onclick="resetGame()">Restart Game</button>
+
+ 
+  <audio id="clickSound" src="click.mp3"></audio>
+  <audio id="winSound" src="winner.mp3"></audio> 
+  <audio id="tieSound" src="fail.mp3"></audio> 
+  <audio id="lossSound" src="lost.mp3"></audio> 
+
+  <script src="script.js"></script>
+</body>
+</html>
